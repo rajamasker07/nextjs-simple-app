@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Oswald, } from 'next/font/google'
+import { Quicksand, } from 'next/font/google'
 import './globals.css'
 
-const oswald = Oswald({subsets: ['latin']})
+const quicksand = Quicksand({subsets: ['latin']})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={oswald.className}>{children}</body>
+      <body className={quicksand.className}>{children}</body>
     </html>
   )
 }

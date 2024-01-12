@@ -1,13 +1,12 @@
-import Image from 'next/image'
+import Card from "./component/card"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-screen p-24 place-items-center justify-center">
-      <div className="bg-white p-1 h-fit gap-1 w-96 flex place-items-center rounded">
-        <div className="bg-slate-300 rounded-full size-12"></div>
-        <div className="text-wrap text-red-500">
-          <h1>Sample</h1>
-        </div>
+    <main className="flex min-h-screen w-screen p-24 place-items-center justify-center gap-10 flex-col">
+      <Card/>
+      <div className="text-xs justify-center">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" className="text-blue-500 underline">Frontend Mentor</a>. 
+        Coded by <a href="#" className="text-blue-500 underline">Rajamasker</a>.
       </div>
     </main>
   )
